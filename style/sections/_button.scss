@@ -1,0 +1,77 @@
+.button-section {
+
+    overflow: hidden;
+    background-color: $orangeClassique;
+
+    .container-sectionButton {
+
+        padding: 50px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+
+        @include lg {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            text-align: center;
+        }
+    }
+
+    .title-button {
+        max-width: 500px;
+        font-size: 25px;
+        
+
+        img {
+            position: absolute;
+            color: $orangeClair;
+            opacity: 0.1;
+            width: 500px;
+
+            &:nth-child(3){
+                top: -50px;
+                right: 50%;
+                transition: 0.3s;
+                @include lg {
+                    right: 100%;
+                    top: 0px;
+                    transition: 0.3s;
+                }
+            }
+
+            &:nth-child(2){
+                top: -350px;
+                right: -50%;
+
+                @include lg {
+                    display: none;
+                }
+            }
+        }
+
+        
+    }
+
+    h2 {
+        color: $BlancClassique;
+    }
+
+    .container-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #last-button {
+        color: $orangeClassique;
+        background-color: $BlancClassique;
+
+        &:hover {
+            box-shadow: 0px 2px 8px 0px $BlancClassique;
+        }
+    }
+}

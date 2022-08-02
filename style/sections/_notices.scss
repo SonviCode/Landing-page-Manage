@@ -1,0 +1,40 @@
+.notice {
+    padding: 100px 0 150px;
+    text-align: center;
+
+    h2 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 100px;
+    }
+
+    .container-slider {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin-bottom: 50px;
+        
+        .card-slid {
+            padding: 20px;
+            background: $grisBackground;
+            max-width: 500px;
+            width: 80vmin;
+            position: relative;
+            padding-top: 50px;
+            flex-shrink: 0;
+
+            p {
+                line-height: 30px;
+            }
+
+            img {
+                position: absolute;
+                top: -40px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+}

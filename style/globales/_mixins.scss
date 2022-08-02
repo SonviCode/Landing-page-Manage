@@ -1,0 +1,48 @@
+/*--------------------- Media queries----------------------*/
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+
+  grid : 741px,
+  footer: 679px,
+);
+
+@mixin sm {
+  @media screen and (max-width: map-get($breakpoints, sm)) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (max-width: map-get($breakpoints, md)) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (max-width: map-get($breakpoints, lg)) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media screen and (max-width: map-get($breakpoints, xl)) {
+    @content;
+  }
+}
+
+@mixin grid {
+  @media screen and (max-width: map-get($breakpoints, grid)) {
+    @content;
+  }
+}
+
+@mixin footer {
+  @media screen and (max-width: map-get($breakpoints, footer)) {
+    @content;
+  }
+}
