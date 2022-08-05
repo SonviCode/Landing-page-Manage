@@ -2,26 +2,63 @@
     padding: 100px 0 150px;
     text-align: center;
 
+    @include sm {
+        padding: 100px 10% 150px;
+        overflow-x: hidden;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        
+      }
+      
     h2 {
         font-size: 40px;
         font-weight: 700;
         margin-bottom: 100px;
+        opacity: 0;
+        visibility: hidden;
+         transform: translateY(-50px);
+    }
+
+    button {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-50px);
     }
 
     .container-slider {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         gap: 20px;
         margin-bottom: 50px;
+        width: 100%;
+        
+        @include sm {
+            margin: 0 10% 50px;
+        }
+
         
         .card-slid {
             padding: 20px;
             background: $grisBackground;
             max-width: 500px;
             width: 80vmin;
+            min-width: 200px;
             position: relative;
             padding-top: 50px;
             flex-shrink: 0;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-50px);
+
+            img, h3, p {
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(50px);
+            }
 
             p {
                 line-height: 30px;

@@ -13,9 +13,7 @@ footer {
         padding: 30px 5% 80px;
     }
 }
-.nav-footer, .social-media, .mail-footer {
-    height: 100%;
-}
+
 
 .social-media, .mail-footer {
     display: flex;
@@ -42,23 +40,28 @@ footer {
     .networks {
         display: flex;
         flex-direction: row;
-        gap: 10px;
+        gap: 20px;
 
         @include footer {
             justify-content: space-around;
         }
-        
-        img {
-            cursor: pointer;
+
+        a {
             
-            @include footer {
-                width: 20px;
-            }
-            
-            &:hover {
-                fill: $orangeClassique !important;
+            i {
+                color: $BlancClassique;
+                font-size: 30px;
+                
+                @include footer {
+                    font-size: 40px;
+                }
+                
+                &:hover {
+                    color: $orangeClassique;
+                }
             }
         }
+        
 
     }
 }

@@ -9,6 +9,12 @@
 
     .title-different {
 
+        p, h2, img {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-50px);
+        }
+
         p, h2 {
 
             @include grid {
@@ -46,6 +52,12 @@
         position: relative;
         left: -8%;
         width: 115%;
+
+        .title-avantages, .text-avantages {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(50px);
+        }
        
 
         .title-avantages {

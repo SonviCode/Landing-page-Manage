@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./style/style.css">
   <title>Manage</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro" rel="stylesheet">
+ 
 </head>
 
 <body>
@@ -88,26 +90,26 @@
         <div class="card-avantages">
 
           <div class="title-avantages">
-            <p>01</p>
+            <p>02</p>
             <h3>Advanced built-in reports</h3>
           </div>
 
           <div class="text-avantages">
 
-            <p>See how your day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+            <p>Set internet delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out he reports you need to keep key stakeholders informed</p>
           </div>
         </div>
 
         <div class="card-avantages">
 
           <div class="title-avantages">
-            <p>01</p>
+            <p>03</p>
             <h3>Everything you need in one place</h3>
           </div>
 
           <div class="text-avantages">
 
-            <p>See how your day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+            <p>Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
           </div>
         </div>
         
@@ -118,33 +120,39 @@
     <section class="notice">
       <h2>What they've said</h2>
 
-      <div class="container-slider">
+      <div #swiperRef="" class="swiper-container mySwiper">
 
-        <div class="card-slid s1">
-          <img src="./images/avatar-ali.png" alt="#">
-          <h3>Anisha Li</h3>
-          <p>"Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated."</p>
-        </div>
-        
-        <div class="card-slid s2">
-          <img src="./images/avatar-ali.png" alt="#">
-          <h3>Anisha Li</h3>
-          <p>"Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated."</p>
+        <div class="swiper-wrapper container-slider">
+  
+          <div class="card-slid s1 swiper-slide">
+            <img src="./images/avatar-anisha.png" alt="#">
+            <h3>Anisha Li</h3>
+            <p>"Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated."</p>
+          </div>
+          
+          <div class="card-slid s2 swiper-slide">
+            <img src="./images/avatar-ali.png" alt="#">
+            <h3>Ali Bravo</h3>
+            <p>"We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."</p>
+          </div>
+  
+          <div class="card-slid s3 swiper-slide">
+            <img src="./images/avatar-richard.png" alt="#">
+            <h3>richard watts</h3>
+            <p>"Manage allows us to provide structure and process. It keeps us organized and focused. I can't stop recommending them to everyone I talk to!"</p>
+          </div>
+  
+          <div class="card-slid s4 swiper-slide">
+            <img src="./images/avatar-shanai.png" alt="#">
+            <h3>Shanai Gough</h3>
+            <p>"Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the wole team in-sync without being intrusive."</p>
+          </div>
+  
         </div>
 
-        <div class="card-slid s3">
-          <img src="./images/avatar-ali.png" alt="#">
-          <h3>Anisha Li</h3>
-          <p>"Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated."</p>
-        </div>
-
-        <div class="card-slid s4">
-          <img src="./images/avatar-ali.png" alt="#">
-          <h3>Anisha Li</h3>
-          <p>"Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated."</p>
-        </div>
-
+        <div class="swiper-pagination"></div>
       </div>
+
 
       <button class="btn">Get Started</button>
     </section>
@@ -173,14 +181,14 @@
 
       <div class="social-media">
         <div class="brand">
-          <img src="./images/logo.svg" alt="" >
+          <img src="./images/logo-with.svg" alt="" >
         </div>
         <div class="networks">
-          <img src="./images/icon-facebook.svg" alt="">
-          <img src="./images/icon-youtube.svg" alt="">
-          <img src="./images/icon-twitter.svg" alt="">
-          <img src="./images/icon-pinterest.svg" alt="">
-          <img src="./images/icon-instagram.svg" alt="">
+          <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
         </div>
       </div>
 
@@ -213,7 +221,11 @@
   </footer>
 
   <!-- BALISE SCRIPT JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./script/app.js"></script>
+  <script src="./script/anim.js"></script>
 
 </body>
 
