@@ -66,7 +66,7 @@ gsap.to(Slid, {
     scrollTrigger: {
         trigger: Slid,
         // markers: true,
-        start: "top 50%",
+        start: "top 90%",
         toggleActions: "play none none reverse ",
         onEnter: ()=> {console.log("ok");}
     }
@@ -80,7 +80,7 @@ gsap.to( h2Slider, {
     scrollTrigger: {
         trigger: h2Slider,
         // markers: true,
-        start: "top 50%",
+        start: "top 90%",
         toggleActions: "play none none reverse ",
         onEnter: ()=> {console.log("ok");}
     }

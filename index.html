@@ -10,6 +10,10 @@
   <link rel="stylesheet" href="./style/style.css">
   <title>Manage</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro" rel="stylesheet">
  
@@ -120,39 +124,41 @@
     <section class="notice">
       <h2>What they've said</h2>
 
-      <div #swiperRef="" class="swiper-container mySwiper">
 
-        <div class="swiper-wrapper container-slider">
+      <div class="section-slider">
+        <div #swiperRef="" class="mySwiper">
+
+          <div class="swiper-wrapper container-slider">
+    
+            <div class="card-slid s1 swiper-slide">
+              <img src="./images/avatar-anisha.png" alt="#">
+              <h3>Anisha Li</h3>
+              <p>"Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated."</p>
+            </div>
+            
+            <div class="card-slid s2 swiper-slide">
+              <img src="./images/avatar-ali.png" alt="#">
+              <h3>Ali Bravo</h3>
+              <p>"We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."</p>
+            </div>
+    
+            <div class="card-slid s3 swiper-slide">
+              <img src="./images/avatar-richard.png" alt="#">
+              <h3>richard watts</h3>
+              <p>"Manage allows us to provide structure and process. It keeps us organized and focused. I can't stop recommending them to everyone I talk to!"</p>
+            </div>
+    
+            <div class="card-slid s4 swiper-slide">
+              <img src="./images/avatar-shanai.png" alt="#">
+              <h3>Shanai Gough</h3>
+              <p>"Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the wole team in-sync without being intrusive."</p>
+            </div>
   
-          <div class="card-slid s1 swiper-slide">
-            <img src="./images/avatar-anisha.png" alt="#">
-            <h3>Anisha Li</h3>
-            <p>"Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated."</p>
           </div>
           
-          <div class="card-slid s2 swiper-slide">
-            <img src="./images/avatar-ali.png" alt="#">
-            <h3>Ali Bravo</h3>
-            <p>"We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."</p>
-          </div>
-  
-          <div class="card-slid s3 swiper-slide">
-            <img src="./images/avatar-richard.png" alt="#">
-            <h3>richard watts</h3>
-            <p>"Manage allows us to provide structure and process. It keeps us organized and focused. I can't stop recommending them to everyone I talk to!"</p>
-          </div>
-  
-          <div class="card-slid s4 swiper-slide">
-            <img src="./images/avatar-shanai.png" alt="#">
-            <h3>Shanai Gough</h3>
-            <p>"Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the wole team in-sync without being intrusive."</p>
-          </div>
-  
+          <div class="swiper-pagination"></div>
         </div>
-
-        <div class="swiper-pagination"></div>
       </div>
-
 
       <button class="btn">Get Started</button>
     </section>
@@ -223,7 +229,7 @@
   <!-- BALISE SCRIPT JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="./script/app.js"></script>
   <script src="./script/anim.js"></script>
 

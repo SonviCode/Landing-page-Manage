@@ -61,7 +61,7 @@
     transform: translate(100px, -200px);
 
     @include grid {
-      transform: scale(0.5);
+      transform: scale(0.5) !important;
       right: -350px;
       left: auto;
       bottom: auto;

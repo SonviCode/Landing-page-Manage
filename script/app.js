@@ -44,71 +44,43 @@ window.addEventListener("scroll", () => {
 
 //  ajout du slider avec swiper.js
 
-const swiper = new Swiper('.mySwiper', {
+var swiper = new Swiper(".mySwiper", {
      
+    effect: "coverflow",
+    grabCursor: true,
     centeredSlides: true,
-    grabCursor:true,
-    spaceBetween: 20,
-
-    breakpoints:{
-      0: {
-        slidesPerView:1,
-      },
-      580: {
-        slidesPerView:2,
-        spaceBetween: 0,
-      },
-      920: {
-        slidesPerView:3,
-        spaceBetween: 0,
-      },
+    slidesPerView: "auto",
+    spaceBetween: 100,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 2,
+      slideShadows: false,
     },
     pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+      el: ".swiper-pagination",
     },
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
     loop:true,
+    grabCursor:true,
   });
+    
 
-  let appendNumber = 4;
-  let prependNumber = 1;
-  document
-    .querySelector('.prepend-2-slides')
-    .addEventListener('click', function (e) {
-      e.preventDefault();
-      swiper.prependSlide([
-        '<div class="swiper-slide">Slide ' + --prependNumber + '</div>',
-        '<div class="swiper-slide">Slide ' + --prependNumber + '</div>',
-      ]);
-    });
-  document
-    .querySelector('.prepend-slide')
-    .addEventListener('click', function (e) {
-      e.preventDefault();
-      swiper.prependSlide(
-        '<div class="swiper-slide">Slide ' + --prependNumber + '</div>'
-      );
-    });
-  document
-    .querySelector('.append-slide')
-    .addEventListener('click', function (e) {
-      e.preventDefault();
-      swiper.appendSlide(
-        '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>'
-      );
-    });
-  document
-    .querySelector('.append-2-slides')
-    .addEventListener('click', function (e) {
-      e.preventDefault();
-      swiper.appendSlide([
-        '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>',
-        '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>',
-      ]);
-    });
+    // breakpoints:{
+    //   0: {
+    //     slidesPerView:1,
+    //   },
+    //   580: {
+    //     slidesPerView:2,
+    //     spaceBetween: 0,
+    //   },
+    //   920: {
+    //     slidesPerView:3,
+    //     spaceBetween: 0,
+    //   },
+    // },
+    
+  
+
 
 
