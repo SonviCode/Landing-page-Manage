@@ -4,6 +4,7 @@
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     position: relative;
     gap: 10px 100px;
+    
 
     
 
@@ -36,7 +37,7 @@
             z-index: -10;
 
             @include grid {
-                transform: scale(0.4);
+                transform: scale(0.4) !important;
                 right: -450px;
                 left: auto;
                 bottom: auto;

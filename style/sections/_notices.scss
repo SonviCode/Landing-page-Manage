@@ -1,7 +1,7 @@
 .notice {
   padding: 100px 0 150px;
   text-align: center;
-
+  overflow-x: hidden;
 //   @include sm {
 //     padding: 100px 10% 150px;
 //     overflow-x: hidden;
@@ -15,7 +15,7 @@
 }
 
   .section-slider {
-    width: 100%;
+    
     position: relative;
     display: flex;
     justify-content: center;
@@ -77,6 +77,7 @@
         top: -40px;
         left: 50%;
         transform: translateX(-50%);
+        overflow: visible;
         width: 80px;
         height: 80px;
       }

@@ -51,7 +51,6 @@ gsap.to(listAvantages, {
         // markers: true,
         start: "top 50%",
         toggleActions: "play none none reverse ",
-        onEnter: ()=> {console.log("ok");}
     }
 })
 
@@ -59,16 +58,15 @@ const Slid = document.querySelectorAll('.card-slid>*, .card-slid, .notice button
 const h2Slider = document.querySelectorAll('.notice h2');
 
 gsap.to(Slid, {
-    duration: 1,
+    duration: 0.5,
     y: 0,
     autoAlpha: 1,
     stagger: 0.1,
     scrollTrigger: {
         trigger: Slid,
-        // markers: true,
+        markers: false,
         start: "top 90%",
         toggleActions: "play none none reverse ",
-        onEnter: ()=> {console.log("ok");}
     }
 })
 
@@ -76,13 +74,12 @@ gsap.to( h2Slider, {
     duration: 1,
     y: 0,
     autoAlpha: 1,
-    stagger: 0.2,
+    stagger: 0.1,
     scrollTrigger: {
         trigger: h2Slider,
-        // markers: true,
+        markers: false,
         start: "top 90%",
         toggleActions: "play none none reverse ",
-        onEnter: ()=> {console.log("ok");}
     }
 })
 
